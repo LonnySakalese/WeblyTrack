@@ -3,7 +3,7 @@ const CACHE_NAME = 'warrior-tracker-v1';
 const urlsToCache = [
   './',
   './WarriorHabitTracker.html',
-  './warrior-icon.svg',
+  './favicon.png',
   './manifest.json'
 ];
 

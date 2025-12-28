@@ -9,7 +9,7 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "warrior-icon.svg",
+      "src": "favicon.png",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
