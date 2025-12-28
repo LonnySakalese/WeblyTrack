@@ -3295,6 +3295,17 @@
                 if (navItem) {
                     navItem.classList.add('active');
                 }
+
+                // Masquer header et navigation si on est sur la page auth
+                const header = document.querySelector('.header');
+                const bottomNav = document.querySelector('.bottom-nav');
+                if (pageName === 'auth') {
+                    if (header) header.style.display = 'none';
+                    if (bottomNav) bottomNav.style.display = 'none';
+                } else {
+                    if (header) header.style.display = 'block';
+                    if (bottomNav) bottomNav.style.display = 'flex';
+                }
             }
 
             // Gérer l'affichage initial
