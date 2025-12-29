@@ -1444,7 +1444,6 @@
     <div class="header">
         <h1>⚔️ WARRIOR TRACKER</h1>
         <div class="quote">"STAY HARD" - David Goggins</div>
-        <button class="logout-btn" id="logoutBtn" onclick="handleLogout()">🚪 Déconnexion</button>
     </div>
 
     <!-- Page "Aujourd'hui" : affiche les habitudes du jour -->
@@ -1575,19 +1574,44 @@
 
         <!-- Section des paramètres -->
         <div class="section-title">⚙️ PARAMÈTRES</div>
-        <div class="settings-section">
-            <button class="reset-btn edit-habits-btn" onclick="openManageHabitsModal()">⚙️ GÉRER LES HABITUDES</button>
 
-            <div class="notif-time-container">
-                <label for="notifTime" style="color: var(--accent); font-size: 0.9rem; margin-bottom: 8px; display: block;">⏰ Heure de rappel :</label>
-                <input type="time" id="notifTime" value="21:00" onchange="updateNotificationTime()"
-                    style="width: 100%; padding: 12px; background: var(--charcoal); color: var(--accent);
-                    border: 1px solid var(--accent-dark); border-radius: 8px; font-size: 1rem; text-align: center;">
+        <!-- Catégorie : Habitudes -->
+        <div style="padding: 0 15px; margin-bottom: 30px;">
+            <div style="color: var(--accent); font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">📝 Habitudes</div>
+            <div class="settings-section">
+                <button class="reset-btn edit-habits-btn" onclick="openManageHabitsModal()">⚙️ GÉRER LES HABITUDES</button>
             </div>
+        </div>
 
-            <button id="notifBtn" class="reset-btn" onclick="toggleNotifications()">🔕 Notifications OFF</button>
-            <button class="reset-btn" onclick="resetAllData()">🗑️ RÉINITIALISER TOUTES LES DONNÉES</button>
-            <button id="deleteAccountBtn" class="reset-btn" style="display: none;" onclick="handleDeleteAccount()">❌ SUPPRIMER MON COMPTE</button>
+        <!-- Catégorie : Notifications -->
+        <div style="padding: 0 15px; margin-bottom: 30px;">
+            <div style="color: var(--accent); font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">🔔 Notifications</div>
+            <div class="settings-section">
+                <div class="notif-time-container">
+                    <label for="notifTime" style="color: var(--accent); font-size: 0.9rem; margin-bottom: 8px; display: block;">⏰ Heure de rappel :</label>
+                    <input type="time" id="notifTime" value="21:00" onchange="updateNotificationTime()"
+                        style="width: 100%; padding: 12px; background: var(--charcoal); color: var(--accent);
+                        border: 1px solid var(--accent-dark); border-radius: 8px; font-size: 1rem; text-align: center;">
+                </div>
+                <button id="notifBtn" class="reset-btn" onclick="toggleNotifications()">🔕 Notifications OFF</button>
+            </div>
+        </div>
+
+        <!-- Catégorie : Compte -->
+        <div style="padding: 0 15px; margin-bottom: 30px;">
+            <div style="color: var(--accent); font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">👤 Compte</div>
+            <div class="settings-section">
+                <button id="logoutBtn" class="reset-btn" style="display: none;" onclick="handleLogout()">🚪 DÉCONNEXION</button>
+                <button id="deleteAccountBtn" class="reset-btn" style="display: none;" onclick="handleDeleteAccount()">❌ SUPPRIMER MON COMPTE</button>
+            </div>
+        </div>
+
+        <!-- Catégorie : Données -->
+        <div style="padding: 0 15px; margin-bottom: 30px;">
+            <div style="color: var(--accent); font-size: 0.85rem; font-weight: bold; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 1px;">💾 Données</div>
+            <div class="settings-section">
+                <button class="reset-btn" onclick="resetAllData()">🗑️ RÉINITIALISER TOUTES LES DONNÉES</button>
+            </div>
         </div>
     </div>
 
