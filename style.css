@@ -1412,3 +1412,115 @@ canvas {
     opacity: 0.3;
     cursor: not-allowed;
 }
+
+/* --- Styles for Rank System Display on Motivation Page --- */
+.rank-system-container {
+    padding: 15px;
+}
+
+.rank-system-card {
+    margin-bottom: 10px;
+}
+
+/* Rank-specific styles */
+.rank-system-card.rank-recruit { border-color: #5A5A55; }
+.rank-system-card.rank-recruit .rank-system-name { color: #5A5A55; }
+.rank-system-card.rank-recruit .rank-system-percentage { color: #5A5A55; }
+
+.rank-system-card.rank-soldier { border-color: #7A7A75; }
+.rank-system-card.rank-soldier .rank-system-name { color: #7A7A75; }
+.rank-system-card.rank-soldier .rank-system-percentage { color: #7A7A75; }
+
+.rank-system-card.rank-warrior { border-color: #A3A39E; }
+.rank-system-card.rank-warrior .rank-system-name { color: #A3A39E; }
+.rank-system-card.rank-warrior .rank-system-percentage { color: #A3A39E; }
+
+.rank-system-card.rank-elite { border-color: #D4D4CF; }
+.rank-system-card.rank-elite .rank-system-name { color: #D4D4CF; }
+.rank-system-card.rank-elite .rank-system-percentage { color: #D4D4CF; }
+
+.rank-system-card.rank-legend {
+    border-color: var(--accent);
+    background: var(--accent);
+}
+.rank-system-card.rank-legend .rank-system-name { color: var(--black); }
+.rank-system-card.rank-legend .rank-system-percentage { color: var(--black); }
+
+/* Common text styles within rank cards */
+.rank-system-name {
+    font-weight: bold;
+}
+
+.rank-system-percentage {
+    font-size: 0.7rem;
+}
+
+/* --- Styles for Settings Page --- */
+.settings-category {
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.settings-category-title {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.settings-time-label {
+    color: var(--accent);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.settings-time-input {
+    width: 100%;
+    padding: 12px;
+    background: var(--charcoal);
+    color: var(--accent);
+    border: 1px solid var(--accent-dark);
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* --- Utility Classes --- */
+.hidden {
+    display: none !important;
+}
+
+
+
+/* --- Styles for Modal Content --- */
+.modal-text {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.modal-text.description {
+    color: var(--accent-dim);
+    margin-bottom: 15px;
+}
+
+.modal-text.confirm-question {
+    color: var(--accent);
+    margin: 20px 0;
+    font-size: 1.1rem;
+}
+
+.modal-text.warning-message {
+    color: var(--accent-dim);
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.modal-button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
